@@ -10,7 +10,7 @@ body{
     border-radius: 20px;
     height: 200px;
     text-align: right;
-    background-image: url("../Images/hbg3.jpg");
+    background-image: url("hbg3.jpg");
     background-size: cover;
     position: fixed;
     top: 10px;
