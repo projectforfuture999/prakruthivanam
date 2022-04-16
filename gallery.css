@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: seashell;
+    
+}
+.top{
+    border-radius: 20px;
+    height: 200px;
+    text-align: right;
+    background-image: url("../Images/hbg3.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 998;
+}
+.top .logo img{
+    position: inherit;
+    top:0px;
+    height: 200px;
+    width: auto;
+    border-radius: 50px;
+}
+
+ul{
+    position: fixed;
+    top: 10px;
+    width: 50%;
+    z-index: 998;
+    list-style-type: none;
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+
+
+}
+li{
+    float: left;
+}
+li a{
+    
+    font-size: xx-large;
+    display: block;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+li a:hover{
+    background-color:darkolivegreen;
+    border-radius: 20px;
+}
+.sample{
+    height: 200px;
+    width: 100%;   
+}
+
+.img-gallery{
+    width: 80%;
+    margin:  100px auto 50px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 25px;
+    
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.img-gallery img{
+    display: flex;
+    height: 220px;
+    width: 200x;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgb(8, 8, 8);
+    overflow: hidden;
+}
+.img-gallery img:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow:0 5px 15px rgb(8, 8, 8); ;
+} 
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+
+}
+.full-img img{
+    height: 600px;
+    width: 700px;
+    border-radius: 10px;
+   
+
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+@media screen and (max-width:700px){
+    .img-gallery {
+       width: 50%;
+       margin: 6px 0;
+
+    }
+}
+
+.four{
+    width: 100%;
+    height: 500px;
+    background-color: gold;
+}
+footer{
+    border-radius: 20px;
+    background-color:olivedrab;
+    
+    height: auto;
+    padding: 100px 100px 100px 200px;   
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.contact{
+    align-self: center;
+    width:70%;
+    border-radius: 20px;
+    background-color: olivedrab;
+    box-shadow: 10px 10px 10px 10px darkolivegreen;
+    padding: 20px;
+    font-size: small;
+    padding: 40px 40px 40px 40px;   
+    color: blanchedalmond;
+}
+i{
+    margin-right: 20px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  #myBtn img{
+    height: 40px;
+    width: 40px;
+}
+
+  #myBtn:hover {
+    background-color: orange;
+  }
+.cr{
+    background-color: yellowgreen;
+    padding: 20px;
+    color: blanchedalmond;
+    text-align: center;
+    border-radius: 20px;
+
+  }

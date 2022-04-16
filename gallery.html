@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="icon" href="Images/logo1.png">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="Images/logo.png" alt="Prakruthivanam">
+        </div>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    
+
+    </div> 
+    <div class="sample"></div>
+   
+    <div class="full-img" id="fullImgBox">
+        <img src="images/Ghee-1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">✘</span>
+    </div>
+    <div class="img-gallery">
+        <img src="img/1.jpg" onclick="openFullImg(this.src)">
+        <img src="img/11.jpg" onclick="openFullImg(this.src)">
+        <img src="img/5.jpg" onclick="openFullImg(this.src)">
+        <img src="img/20.jpg" onclick="openFullImg(this.src)">
+        <img src="img/19.jpg" onclick="openFullImg(this.src)">
+        <img src="img/15.jpg" onclick="openFullImg(this.src)">
+        <img src="img/21.jpg" onclick="openFullImg(this.src)">
+        <img src="img/31.jpg" onclick="openFullImg(this.src)">
+        <img src="img/2.jpg" onclick="openFullImg(this.src)">
+        <img src="img/16.jpg" onclick="openFullImg(this.src)">
+        <img src="img/10.jpg" onclick="openFullImg(this.src)">
+        <img src="img/18.jpg" onclick="openFullImg(this.src)">
+        <img src="img/3.jpg" onclick="openFullImg(this.src)">
+        <img src="img/13.jpg" onclick="openFullImg(this.src)">
+        <img src="img/4.jpg" onclick="openFullImg(this.src)">
+        <img src="img/14.jpg" onclick="openFullImg(this.src)">
+        <img src="img/22.jpg" onclick="openFullImg(this.src)">
+        <img src="img/28.jpg" onclick="openFullImg(this.src)">
+        <img src="img/29.jpg" onclick="openFullImg(this.src)">
+        <img src="img/35.jpg" onclick="openFullImg(this.src)">
+        <img src="img/6.jpg" onclick="openFullImg(this.src)">
+        <img src="img/23.jpg" onclick="openFullImg(this.src)">
+        <img src="img/7.jpg" onclick="openFullImg(this.src)">
+        <img src="img/45.jpg" onclick="openFullImg(this.src)">
+        <img src="img/40.jpg" onclick="openFullImg(this.src)">
+        <img src="img/9.jpg" onclick="openFullImg(this.src)">
+        <img src="img/44.jpg" onclick="openFullImg(this.src)">
+        <img src="img/33.jpg" onclick="openFullImg(this.src)">
+        <img src="img/47.jpg" onclick="openFullImg(this.src)">
+        <img src="img/51.jpg" onclick="openFullImg(this.src)">
+        <img src="img/35.jpg" onclick="openFullImg(this.src)">
+        <img src="img/39.jpg" onclick="openFullImg(this.src)">
+        <img src="img/17.jpg" onclick="openFullImg(this.src)">
+        <img src="img/41.jpg" onclick="openFullImg(this.src)">
+        <img src="img/25.jpg" onclick="openFullImg(this.src)">
+        <img src="img/27.jpg" onclick="openFullImg(this.src)">
+        <img src="img/37.jpg" onclick="openFullImg(this.src)">
+        <img src="img/43.jpg" onclick="openFullImg(this.src)">
+        <img src="img/24.jpg" onclick="openFullImg(this.src)">
+        <img src="img/38.jpg" onclick="openFullImg(this.src)">
+        <img src="img/12.jpg" onclick="openFullImg(this.src)">
+        <img src="img/28.jpg" onclick="openFullImg(this.src)">
+        <img src="img/34.jpg" onclick="openFullImg(this.src)">
+        <img src="img/37.jpg" onclick="openFullImg(this.src)">
+        <img src="img/26.jpg" onclick="openFullImg(this.src)">
+        <img src="img/36.jpg" onclick="openFullImg(this.src)">
+        <img src="img/31.jpg" onclick="openFullImg(this.src)">
+        <img src="img/50.jpg" onclick="openFullImg(this.src)">
+        <img src="img/48.jpg" onclick="openFullImg(this.src)">
+        <img src="img/46.jpg" onclick="openFullImg(this.src)">
+        <img src="img/49.jpg" onclick="openFullImg(this.src)">
+        <img src="img/55.jpg" onclick="openFullImg(this.src)">
+        <img src="img/45.jpg" onclick="openFullImg(this.src)">
+        <img src="img/54.jpg" onclick="openFullImg(this.src)">
+        <img src="img/53.jpg" onclick="openFullImg(this.src)">
+        <img src="img/52.jpg" onclick="openFullImg(this.src)">
+    </div>
+    
+<script>
+    var fullImgBox = document.getElementById("fullImgBox")
+    var fullImg = document.getElementById("fullImg")
+
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+
+
+    }
+    function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+    
+
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="Images/top.png" alt=""></button>
+        
+        <script>
+        
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+
+<footer>
+    <div class="contact">
+    <h1><i class="fa fa-envelope"></i><a href="mailto:sales@prakruthivanam.com" target="_blank">sales@prakruthivanam.com</a></h1>
+    <h1><i class="fas fa-phone"></i>9492903765 | 9100505585 | 9440855241 </h1>
+    <h1><i class="fa-brands  fa-facebook"></i> <a href="https://www.facebook.com/Prakruthivanam-Prasad-Madanapalle-2225631497699576" target="_blank">Prasad Prakruthivanam</a></h1>
+    <h1><i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/BWEmQGhPnxRqYepTA" target="_blank">PRAKRUTHIVANAM</a></h1>
+    <h1><i class="fa-brands fa-telegram"></i><a href="https://t.me/Prakruthi2prasad" target="_blank">Chat group ( For Indians)</a> </h1>
+    <h1><i class="fa-brands fa-telegram"></i><a href="https://t.me/joinchat/JRljQEzyv0xVQAxViGmPgg" target="_blank">Chat group ( For NRIs)</a> </h1>
+    <h1><i class="fa-brands fa-telegram"></i><a href="https://t.me/joinchat/AAAAAE9mzH5JWuK3DCUguw" target="_blank">Channel Prasad - ప్రకృతివనం</a> </h1>
+    <h1><i class="fa-brands fa-telegram"></i><a href="https://t.me/goodfoodhealthylife" target="_blank">Healthy recipes for a healthy living</a> </h1>
+    <h1><i class="fa-brands fa-instagram"></i><a href="https://instagram.com/prakruthivanamofficial?igshid=1n2byannq9xjg" target="_blank">prakruthivanamofficial</a> </h1>
+    <h1 style="text-align: right;"><a href="privacypolicy.html">Privacy Policy</a></h1>
+    <div class="vl"></div>
+
+
+  
+  
+
+</div>
+
+ 
+</footer> 
+<div class="cr">
+<h2>&copy; Copyright 2022 - Prakruthivanam. All Rights Reserved </h2>
+</div>
+</body>
+</html>
