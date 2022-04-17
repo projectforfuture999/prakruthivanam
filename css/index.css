@@ -128,6 +128,7 @@ li a:hover{
 footer{
     border-radius: 20px;
     background-color:olivedrab;
+    width:100%;
     
     height: auto;
     padding: 100px 100px 100px 200px;   
